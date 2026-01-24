@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <title>bOOKING</title>
+        <link rel="stylesheet" href="booking.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="hotel.html">الفنادق</a>
+                <a href="Cars_book.html">السيارات</a>
+                <a href="tickets.html">التذاكر</a>
+            </nav>
+        </header>
+        <script>
+            const style=document.createElement("style");
+            style.textContent="{text-align:center;}";
+            document.head.appendChild(style)
+            var name=window.prompt("الاسم");
+            var now=new Date();
+            var hour=now.getHours();
+            if (hour<=12){
+                document.writeln("صباح الخير");
+            }
+            if (hour>=12){
+                document.writeln("مساء الخير");
+            }
+        </script>
+        <br>
+        <h1 style="text-align:center;">أهلًا بك في موقع الحجوزات</h1>
+        <h3 style="text-align:center;">اختر ما تريد من القائمة أعلاه</h3>
+    </body>
+    <footer>&copy; بيان ناصر آل يعقوب | دار اليوم القابضة</footer>
+</html>
